@@ -10,51 +10,51 @@ public class PinBehaviour : MonoBehaviour
     [SerializeField]
     private float zPosition;
     [SerializeField]
-    private float yPosition;
-    [SerializeField]
-    private float dropSpeed;
-
+    private float resetHeight;
     private bool standing = true;
-    private bool resetting = false;
+    private bool startReset = false;
 
     void Awake()
     {
         standing = true;
-        Reset(0);
+        startReset = false;
+        Load();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.localPosition.y >= yPosition + 0.15 && resetting)
+        if(scoreSO.Resetting)
         {
-            gameObject.transform.rotation = new quaternion(0, 0, 0, 0);
-            Reset(gameObject.transform.localPosition.y - dropSpeed);
-        }
-        else if(resetting){
-            standing = true;     
-            resetting = false;
+            Load();
         }
         else if(standing)
         {
             //do fall over check
-            if(Mathf.Abs(gameObject.transform.rotation.z) > 45 || Mathf.Abs(gameObject.transform.rotation.x) > 45 )
+            if((Mathf.Abs(gameObject.transform.rotation.eulerAngles.x) > 55 &&  Mathf.Abs(gameObject.transform.rotation.eulerAngles.x) < 305) || (Mathf.Abs(gameObject.transform.rotation.eulerAngles.z) > 55 &&  Mathf.Abs(gameObject.transform.rotation.eulerAngles.z) < 305) )
             {
                 standing = false;
-                scoreSO.BowlingScore++;
+                scoreSO.StandingPins--;
             }
-        }
-
-        if(scoreSO.BowlingScore % 9 == 0 && scoreSO.BowlingScore > 0)
-        {
-            Reset(yPosition + 1.5f);
-            resetting = true;
         }
     }
 
-    private void Reset(float yPos)
+    private void Load()
     {
-        gameObject.transform.localPosition = new Vector3(xPosition, yPos, zPosition);
-        gameObject.transform.rotation = new quaternion(0, 0, 0, 0);
+        if(!startReset)
+        {
+            gameObject.transform.localPosition = new Vector3(xPosition, resetHeight, zPosition);
+            gameObject.transform.rotation = new quaternion(0, 0, 0, 0);
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            startReset = true;
+        }
+
+        if(!(gameObject.transform.localPosition.y >= 0.01))
+        {
+            standing = true;     
+            scoreSO.StandingPins++;
+            startReset = false;
+        }
     }
 }
