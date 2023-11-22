@@ -2887,6 +2887,60 @@ Transform:
   m_Father: {fileID: 374095551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &147446771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 581215177874533543, guid: 44b2b39757ba04840ba184ad02b7beeb, type: 3}
+  m_PrefabInstance: {fileID: 992130762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147446773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 581215177874533540, guid: 44b2b39757ba04840ba184ad02b7beeb, type: 3}
+  m_PrefabInstance: {fileID: 992130762}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147446771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &147446776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147446771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 147446773}
+  m_TurnSpeed: 60
+  m_LeftHandTurnAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 27c6678a-72d7-463a-b6e6-f68f76375d0f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_RightHandTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 070974bc-73f7-40b2-bb57-cde73c76fdaf
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6493913391331992944, guid: beec7c82e5ae18e4bba505e608c7b01e, type: 3}
 --- !u!1 &152150580
 GameObject:
   m_ObjectHideFlags: 0
@@ -19796,6 +19850,10 @@ PrefabInstance:
     - target: {fileID: 581215176793695794, guid: 44b2b39757ba04840ba184ad02b7beeb, type: 3}
       propertyPath: m_Name
       value: XR
+      objectReference: {fileID: 0}
+    - target: {fileID: 581215177874533539, guid: 44b2b39757ba04840ba184ad02b7beeb, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44b2b39757ba04840ba184ad02b7beeb, type: 3}
