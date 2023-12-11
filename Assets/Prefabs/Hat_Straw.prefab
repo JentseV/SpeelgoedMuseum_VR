@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4743027334303021477}
   - component: {fileID: 8269605259025189712}
   - component: {fileID: 3636475009889105930}
+  - component: {fileID: 6010536603638419966}
   m_Layer: 0
   m_Name: Hat_Straw
   m_TagString: Untagged
@@ -245,3 +246,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29319793, y: 0.14263599, z: 0.36513227}
   m_Center: {x: 0.000054344535, y: -0.01955227, z: 0.008350097}
+--- !u!114 &6010536603638419966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111684789655343020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7459e3c3b62dbd04995dc326cc8d1bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kidsThrowing: {fileID: 0}
