@@ -30,4 +30,6 @@ public class HatScript : MonoBehaviour
     {
         Debug.Log("Object released by " + args.interactableObject.transform.name);
     }
+
+    
 }
