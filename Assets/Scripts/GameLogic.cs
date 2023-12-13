@@ -6,6 +6,7 @@ public class GameLogic : MonoBehaviour
 {
 
     [SerializeField] private Player player;
+    [SerializeField] private GameObject keyChest;
     void Start()
     {
         
@@ -13,8 +14,12 @@ public class GameLogic : MonoBehaviour
 
     void Update()
     {
-        if(player.GetComponent<Score>().GetScore() > 5){
+        if(player.GetComponent<Score>().GetScore() > 5 && player.GetComponent<Transform>().position){
             
         }
+    }
+
+    private void UnlockChest(){
+        keyChest.GetComponent<Animation>();
     }
 }
