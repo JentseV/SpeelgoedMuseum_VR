@@ -23,7 +23,7 @@ public class HatScript : MonoBehaviour
     void OnSelectEntered(SelectEnterEventArgs args)
     {
         Debug.Log("Object grabbed by " + args.interactableObject.transform.name);
-        kidsThrowing.SetActive(false);
+
 
     }
 

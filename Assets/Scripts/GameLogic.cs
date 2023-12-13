@@ -14,8 +14,9 @@ public class GameLogic : MonoBehaviour
 
     void Update()
     {
-        if(player.GetComponent<Score>().GetScore() > 5 && player.GetComponent<Transform>().position){
-            
+        if(player.GetComponent<Score>().GetScore() > 5 && Vector2.Distance(player.GetComponent<Transform>().localPosition,keyChest.GetComponent<Transform>().localPosition) < 5f){
+            //open chest
+            UnlockChest();
         }
     }
 

@@ -258,4 +258,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7459e3c3b62dbd04995dc326cc8d1bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidsThrowing: {fileID: 0}
+  player: {fileID: 0}
