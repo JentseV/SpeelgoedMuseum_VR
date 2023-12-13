@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Border_Easy
-  - Border_Medium
-  - Border_Hard
-  - Border_Expert
-=======
-  - Ball
-  - Wall
-  - Reset
-  - catchable
->>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432
+  tags: []
   layers:
   - Default
   - TransparentFX
