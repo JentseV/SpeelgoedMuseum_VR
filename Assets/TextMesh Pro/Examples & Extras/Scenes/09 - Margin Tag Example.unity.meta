@@ -1,8 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity.meta
 guid: 349f38d3606449708c7340d26740e1e2
 timeCreated: 1434495347
+========
+guid: fade42e8bc714b018fac513c043d323b
+timeCreated: 1425440388
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
 licenseType: Store
-DefaultImporter:
+TextScriptImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 

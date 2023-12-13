@@ -4,8 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Bowling.unity
+    guid: 4b84e55683695b0479795e407486dfc5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7f9b339767689e442818a5f8b11304aa, type: 2}
+<<<<<<< HEAD
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 12fc3ace036e9b54baee0730d1c2a9ae, type: 2}
+=======
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 98efaae1e5802c6409fe9b6ca0b86305, type: 2}
+>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 48b12c85d0d4a8640bc6d3cf6114f7bc, type: 2}

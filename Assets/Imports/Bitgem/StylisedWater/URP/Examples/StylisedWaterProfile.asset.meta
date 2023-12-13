@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 05d75389c271387408f4f25b616b2aed
+<<<<<<<< HEAD:Assets/Imports/Bitgem/StylisedWater/URP/Examples/StylisedWaterProfile.asset.meta
+guid: 64c1868d1430c4b0d9ef532913867f35
+========
+guid: 0caad3af14f9a414dbdf25ed41e5aa47
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/XR/1.0.0-pre.3/Default Input Actions/XRI Default Continuous Turn.preset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

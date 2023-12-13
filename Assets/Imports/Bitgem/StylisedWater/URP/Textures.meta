@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 367ab3d55b12373498b117eefb6804e2
+<<<<<<<< HEAD:Assets/Imports/Bitgem/StylisedWater/URP/Textures.meta
+guid: af1e3f7c082f845e79f039e6a955e19b
+========
+guid: addad6d5c6b05404cbac3f4f9a32e7a5
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/Models.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

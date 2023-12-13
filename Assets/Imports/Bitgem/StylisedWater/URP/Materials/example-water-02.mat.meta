@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: fb659c98d6ac4db41b88596ff2c4e2e1
+<<<<<<<< HEAD:Assets/Imports/Bitgem/StylisedWater/URP/Materials/example-water-02.mat.meta
+guid: 544cc5d6918b645fb9fc27df95185a05
+========
+guid: 91f9da00cfdac5d49955df2d2d820b9c
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/XR/1.0.0-pre.3/Default Input Actions/XRI Default Continuous Move.preset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

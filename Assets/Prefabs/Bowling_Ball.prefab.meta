@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Bowling_Ball.prefab.meta
 guid: 4424ae55fd2c04f939e16cecbf378a13
+========
+guid: 7978cceb34476ff4fb2e6a7f7974571b
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/Prefabs/Bowling area.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

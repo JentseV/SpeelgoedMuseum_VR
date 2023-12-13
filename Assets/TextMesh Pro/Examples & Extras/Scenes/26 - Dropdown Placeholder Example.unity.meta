@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 0851605490a599b46b6ac5cb681d93ea
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity.meta
+guid: c57ffda57f6ce4373bf4509b7b94f54c
+========
+guid: e068f5bc6343d324bbec6f022a4f56ce
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/Scenes/Knucklebone.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

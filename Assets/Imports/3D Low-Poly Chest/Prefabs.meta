@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Imports/3D Low-Poly Chest/Prefabs.meta
 guid: e16fe3fe072f2c74ca8c9355eb4ace27
+========
+guid: 40888308c9c4a6348ba0f3cffdba926c
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/Models/Prefabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

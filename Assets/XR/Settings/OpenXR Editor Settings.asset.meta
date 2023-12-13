@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5a702e2c6e7a52c42ab2597c80fc6aef
+=======
+<<<<<<<< HEAD:Assets/New Universal Render Pipeline Asset.asset.meta
+guid: 330ae1405f8b6af44804f3d9ca4ccd60
+========
+guid: 1237617da7dcc034f95c4f1ea763888c
+>>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432:Assets/XR/Settings/OpenXR Editor Settings.asset.meta
+>>>>>>> 7b8b59e31cd4fd885eeb1b8f6650e7220db41432
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
