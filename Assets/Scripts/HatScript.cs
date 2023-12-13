@@ -7,7 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class HatScript : MonoBehaviour
 {
     private XRGrabInteractable grabInteractable;
-    public GameObject kidsThrowing;
+
+    [SerializeField] private Player player;
 
     void Start()
     {
@@ -32,6 +33,25 @@ public class HatScript : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        
+        var playerScore = player.GetComponent<Score>();
+
+        switch(other.transform.tag){
+            case "Border_Easy":{
+                playerScore.AddScore(1);
+                break;
+            }
+            case "Border_Medium":{
+                playerScore.AddScore(1);
+                break;
+            }
+            case "Border_Hard":{
+                playerScore.AddScore(1);
+                break;
+            }
+            case "Border_Expert":{
+                playerScore.AddScore(1);
+                break;
+            }
+        }
     }
 }
