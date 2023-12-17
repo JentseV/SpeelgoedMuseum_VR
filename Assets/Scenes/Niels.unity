@@ -57143,10 +57143,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1281392583, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.82
+      objectReference: {fileID: 0}
     - target: {fileID: 1061362532153691184, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c2d0b7d7d1d6d394180d388354580fbc, type: 2}
+    - target: {fileID: 2940284592647564204, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3854856439097548961, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_RootOrder
       value: 26
