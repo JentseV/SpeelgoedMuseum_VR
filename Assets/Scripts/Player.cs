@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private Score score; 
 
+    [SerializeField] private GameLogic gameLogic;
     void Start()
     {
         this.score.Setscore(0);
@@ -17,5 +18,10 @@ public class Player : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Painting"){
+            gameLogic.entry = true;
+            Debug.Log("Entered painting");
+        }
+    }
 }

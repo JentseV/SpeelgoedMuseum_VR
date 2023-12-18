@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Border_Medium
+  - Border_Easy
+  - Border_Expert
+  - Border_Hard
+  - Painting
   layers:
   - Default
   - TransparentFX
