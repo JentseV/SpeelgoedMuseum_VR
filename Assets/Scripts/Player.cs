@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Score score; 
 
     [SerializeField] private GameLogic gameLogic;
+
+
     void Start()
     {
         this.score.Setscore(0);

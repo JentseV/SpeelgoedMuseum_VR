@@ -37,19 +37,19 @@ public class HatScript : MonoBehaviour
 
         switch(other.transform.tag){
             case "Border_Easy":{
-                playerScore.AddScore(1);
+                playerScore.AddScore();
                 break;
             }
             case "Border_Medium":{
-                playerScore.AddScore(1);
+                playerScore.AddScore();
                 break;
             }
             case "Border_Hard":{
-                playerScore.AddScore(1);
+                playerScore.AddScore();
                 break;
             }
             case "Border_Expert":{
-                playerScore.AddScore(1);
+                playerScore.AddScore();
                 break;
             }
         }
