@@ -9,6 +9,10 @@ TagManager:
   - Border_Expert
   - Border_Hard
   - Painting
+  - Ball
+  - catchable
+  - Coin
+  - Well Water
   layers:
   - Default
   - TransparentFX

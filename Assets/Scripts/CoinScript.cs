@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class CoinScript : MonoBehaviour
 {
-    [SerializeField] public GameObject coinPrefab; 
-    [SerializeField] public GameObject[] spawnPoints; 
+
+    [SerializeField] private Transform horseSpawn;
+
+    [SerializeField] private GameObject horseToy;
+
+    private bool spawnedHorse;
+
+  
+
+    private void Start() {
+        spawnedHorse = false;
+    }
 
 
-    public void SpawnCoin()
-    {
-        if (coinPrefab != null && spawnPoints.Length > 0)
-        {
-            int randomIndex = Random.Range(0, spawnPoints.Length);
-            Vector3 spawnPosition = spawnPoints[randomIndex].transform.position;
+    void spawnHorse(){
+        spawnedHorse = true;
 
-            Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(horseToy,horseSpawn.position,Quaternion.identity);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Well Water" && spawnedHorse == false){
+            spawnHorse();
         }
     }
 
-    public void PlayerScored()
-    {
-        SpawnCoin();
-    }
 
 }

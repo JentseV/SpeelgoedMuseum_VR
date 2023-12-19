@@ -6,12 +6,10 @@ public class Score : MonoBehaviour
 {
     private int score;
 
-    [SerializeField] private CoinScript coinScript;
+    [SerializeField] private CoinChest coinChest;
     void Start()
     {
         this.score = 0;        
-        InvokeRepeating("AddScore", 0f, 2f);
-
     }
 
     // Update is called once per frame
@@ -26,7 +24,7 @@ public class Score : MonoBehaviour
     }
     public void AddScore(){
         this.score +=1;
-        this.coinScript.PlayerScored();
+        this.coinChest.PlayerScored();
     }
 
     public int GetScore(){
