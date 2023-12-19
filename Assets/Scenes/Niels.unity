@@ -30475,6 +30475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1348645552, guid: adb6c0ac1083b72468cb85783ad1108b, type: 3}
+      propertyPath: m_Center.y
+      value: 2.08
+      objectReference: {fileID: 0}
     - target: {fileID: 1348645553, guid: adb6c0ac1083b72468cb85783ad1108b, type: 3}
       propertyPath: gameLogic
       value: 
@@ -60423,11 +60427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800132242749569641, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_Size.z
-      value: 1.5268581
+      value: 4.6987796
       objectReference: {fileID: 0}
     - target: {fileID: 7800132242749569641, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_Center.x
-      value: -5.9099003e-10
+      value: -3.8769618e-10
       objectReference: {fileID: 0}
     - target: {fileID: 7800132242749569641, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_Center.y
@@ -60435,7 +60439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800132242749569641, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: m_Center.z
-      value: -2.7750924
+      value: -4.361054
       objectReference: {fileID: 0}
     - target: {fileID: 7800132243970163780, guid: d3f510cc68a3eeb4288af37bbb2ec700, type: 3}
       propertyPath: player
