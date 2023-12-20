@@ -25,6 +25,7 @@ public class Score : MonoBehaviour
     public void AddScore(){
         this.score +=1;
         this.coinChest.PlayerScored();
+        Debug.Log("coin dropped");
     }
 
     public int GetScore(){

@@ -5,5 +5,5 @@ using UnityEngine;
 public class ScoreSO : ScriptableObject
 {
     public int StandingPins;
-    public bool Resetting;
+    public bool completed;
 }

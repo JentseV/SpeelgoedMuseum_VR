@@ -24,15 +24,6 @@ public class BallBehaviour : MonoBehaviour
         Load();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(scoreSO.Resetting)
-        {
-            Load();
-        }
-
-    }
 
     private void Load()
     {
