@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 1127151485009549727}
   - component: {fileID: 1127151485009549714}
   - component: {fileID: 1127151485009549715}
-  - component: {fileID: 266806763}
   m_Layer: 0
   m_Name: BowlingBall
   m_TagString: Ball
@@ -263,20 +262,3 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &266806763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127151485009549724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c391506115d57e84484c5a1e534ba964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreSO: {fileID: 11400000, guid: b9a0015039b0e54488a6d3972fb1fb2f, type: 2}
-  xPosition: 1
-  zPosition: -0.6
-  yPosition: 0.2
-  resetTime: 3

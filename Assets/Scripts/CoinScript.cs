@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
 
-    [SerializeField] private Transform horseSpawn;
+    private Transform horseSpawn;
 
     [SerializeField] private GameObject horseToy;
 
@@ -15,6 +15,7 @@ public class CoinScript : MonoBehaviour
 
     private void Start() {
         spawnedHorse = false;
+        horseSpawn = GameObject.FindWithTag("HobbyHorseSpawn").transform;
     }
 
 

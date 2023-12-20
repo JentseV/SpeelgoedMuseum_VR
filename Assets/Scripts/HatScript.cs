@@ -32,7 +32,7 @@ public class HatScript : MonoBehaviour
         Debug.Log("Object released by " + args.interactableObject.transform.name);
     }
 
-    private void OnCollisionEnter(Collision other) {
+    private void OnTriggerEnter(Collider other) {
         var playerScore = player.GetComponent<Score>();
 
         switch(other.transform.tag){

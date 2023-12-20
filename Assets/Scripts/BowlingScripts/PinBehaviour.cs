@@ -24,11 +24,7 @@ public class PinBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreSO.Resetting)
-        {
-            Load();
-        }
-        else if(standing)
+        if(standing)
         {
             //do fall over check
             if((Mathf.Abs(gameObject.transform.rotation.eulerAngles.x) > 55 &&  Mathf.Abs(gameObject.transform.rotation.eulerAngles.x) < 305) || (Mathf.Abs(gameObject.transform.rotation.eulerAngles.z) > 55 &&  Mathf.Abs(gameObject.transform.rotation.eulerAngles.z) < 305) )

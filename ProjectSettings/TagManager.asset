@@ -13,6 +13,9 @@ TagManager:
   - catchable
   - Coin
   - Well Water
+  - Reset
+  - HobbyHorseSpawn
+  - Wall
   layers:
   - Default
   - TransparentFX

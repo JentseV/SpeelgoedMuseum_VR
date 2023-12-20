@@ -48,7 +48,7 @@ public class BallBehaviour : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             Load();
-            scoreSO.BallThrows += 1;
+            //scoreSO.BallThrows += 1;
             Debug.Log("ball hit wall");
         }
     }
@@ -61,7 +61,7 @@ public class BallBehaviour : MonoBehaviour
             if (timeInZone >= resetTime)
             {
                 Load();
-                scoreSO.BallThrows += 1;
+                //scoreSO.BallThrows += 1;
                 Debug.Log("ball was in zone");
             }
         }
