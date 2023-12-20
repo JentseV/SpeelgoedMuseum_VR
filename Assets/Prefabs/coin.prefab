@@ -29,14 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476749910944784559}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.113, y: 0.75881, z: 15.497}
-  m_LocalScale: {x: 9.828836, y: 9.828836, z: 9.828836}
+  m_LocalScale: {x: 2.646293, y: 2.646293, z: 2.646293}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4213621841562924464
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -243,5 +243,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294d21d29891ceb49a3a838078fb380d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horseSpawn: {fileID: 0}
   horseToy: {fileID: 5866301607642162806, guid: ebdda15e3e9fe364a98640f023677eaa, type: 3}
