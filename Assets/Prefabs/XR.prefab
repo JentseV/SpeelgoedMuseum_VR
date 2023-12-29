@@ -316,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581215176559435826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -891,6 +891,7 @@ GameObject:
   - component: {fileID: 1348645552}
   - component: {fileID: 1348645553}
   - component: {fileID: 3940300411367803437}
+  - component: {fileID: 1348645561}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -906,7 +907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581215177874533543}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.055, y: -1.77, z: 30.007}
+  m_LocalPosition: {x: 1.055, y: -1.8, z: 30.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -930,7 +931,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 581215177874533543}
   m_CameraFloorOffsetObject: {fileID: 581215176559435826}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 1.8
 --- !u!114 &581215177874533539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 581215177874533540}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 2
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 1
@@ -1021,12 +1022,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581215177874533543}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.6678773
   m_Height: 2.8936124
   m_Direction: 1
-  m_Center: {x: 0, y: 0.4312087, z: 0.16787739}
+  m_Center: {x: 0, y: 2.08, z: 0.16787739}
 --- !u!114 &1348645553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1055,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinChest: {fileID: 0}
+--- !u!114 &1348645561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581215177874533543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1cbb2852beda84bad04b8a532996bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreSO: {fileID: 11400000, guid: b9a0015039b0e54488a6d3972fb1fb2f, type: 2}
+  BowlingTextScore: {fileID: 0}
+  player: {fileID: 1348645553}
 --- !u!1 &783611942880509077
 GameObject:
   m_ObjectHideFlags: 0
