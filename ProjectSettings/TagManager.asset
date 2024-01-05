@@ -17,6 +17,8 @@ TagManager:
   - HobbyHorseSpawn
   - Wall
   - Bowl
+  - Key
+  - PlayerHand
   layers:
   - Default
   - TransparentFX
