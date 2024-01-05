@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,8 +27,10 @@ public class PaintingScript : MonoBehaviour
         if (player != null)
         {
             distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-
-            float fadeAmount = Mathf.Clamp01((distanceToPlayer - fadeDistance) / (maxDistance - fadeDistance));
+            Debug.Log("D:" + distanceToPlayer);
+            Debug.Log("D/:" + (distanceToPlayer - fadeDistance) / (maxDistance));
+            Debug.Log("---");
+            float fadeAmount = Mathf.Clamp01((distanceToPlayer - fadeDistance) / (maxDistance));
 
             float targetAlpha = Mathf.Lerp(0f, initialAlpha, fadeAmount);
             Color frameCollor = frameRenderer.material.color;
