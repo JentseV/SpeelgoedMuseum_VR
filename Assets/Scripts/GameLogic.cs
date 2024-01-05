@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameLogic : MonoBehaviour
 {
 
+    public float collectedCoins = 0;
     [SerializeField] private Player player;
     [SerializeField] private GameObject keyChest;
 
@@ -31,15 +32,8 @@ public class GameLogic : MonoBehaviour
             entrance.SetActive(false);
             blockLight.SetActive(false);
             enableAfterEntry.SetActive(true);
+            RenderSettings.ambientIntensity = 0.68f;
         }
 
-        if(player.GetComponent<Score>().GetScore() > 5 && Vector2.Distance(player.GetComponent<Transform>().localPosition,keyChest.GetComponent<Transform>().localPosition) < 5f){
-
-            UnlockChest();
-        }
-    }
-
-    private void UnlockChest(){
-        keyChest.GetComponent<Animation>();
     }
 }

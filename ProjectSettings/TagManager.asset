@@ -16,6 +16,7 @@ TagManager:
   - Reset
   - HobbyHorseSpawn
   - Wall
+  - Bowl
   layers:
   - Default
   - TransparentFX
