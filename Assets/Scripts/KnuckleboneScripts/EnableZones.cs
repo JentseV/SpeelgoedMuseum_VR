@@ -20,7 +20,6 @@ public class EnableZones : MonoBehaviour
         }
         else 
         {
-            Debug.Log(Vector3.Distance(this.transform.position, player.position));
             handL.SetActive(false);
             handR.SetActive(false);
         }
