@@ -19,6 +19,8 @@ TagManager:
   - Bowl
   - Key
   - PlayerHand
+  - WoodFloor
+  - Terrain
   layers:
   - Default
   - TransparentFX

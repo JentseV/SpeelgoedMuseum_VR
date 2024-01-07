@@ -28,6 +28,10 @@ public class KeySocketInteraction : MonoBehaviour
     void OpenLock()
     {
         theLock.SetActive(false);
-        doorAnimator.SetTrigger("Open");
+        doorAnimator.SetBool("Open",true);
+    }
+
+    public void CloseDoor(){
+        doorAnimator.SetBool("Close",true);
     }
 }

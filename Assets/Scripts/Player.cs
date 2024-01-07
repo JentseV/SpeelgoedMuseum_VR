@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public AudioClip walkingSound; 
+    public float walkingSpeedThreshold = 0.1f; 
 
+    private AudioSource audioSource;
     [SerializeField] private Score score; 
 
     [SerializeField] private GameLogic gameLogic;
