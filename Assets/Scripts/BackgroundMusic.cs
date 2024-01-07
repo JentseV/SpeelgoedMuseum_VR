@@ -23,22 +23,28 @@ public class BackgroundMusic : MonoBehaviour
         }
     }
 
-    void Update()
+void Update()
+{
+    if (gameLogic.entry)
     {
-        if (gameLogic.entry)
+        if (audioSource.clip == specificSong && audioSource.isPlaying)
         {
-            if (!audioSource.isPlaying)
-            {
-                PlayRandomKidsPlayingSound();
-            }
+            audioSource.Stop();
+            PlayRandomKidsPlayingSound();
+        }
+        else if (!audioSource.isPlaying)
+        {
+            PlayRandomKidsPlayingSound();
         }
     }
+}
 
     void PlayRandomKidsPlayingSound()
     {
         int randomIndex = Random.Range(0, musicTracks.Length);
 
         audioSource.clip = musicTracks[randomIndex];
+        audioSource.Stop();
         audioSource.Play();
     }
 }

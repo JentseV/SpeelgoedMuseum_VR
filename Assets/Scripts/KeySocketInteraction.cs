@@ -10,7 +10,7 @@ public class KeySocketInteraction : MonoBehaviour
 
 
     private void Start() {
-        doorAnimator = GetComponent<Animator>();
+        doorAnimator = GameObject.Find("Entrance/Door").GetComponent<Animator>();
     }
     void OnTriggerEnter(Collider other)
     {
@@ -22,12 +22,11 @@ public class KeySocketInteraction : MonoBehaviour
 
     void KeyInserted()
     {
-        Invoke("OpenLock", 2.0f); 
+        Invoke("OpenLock", 1.0f); 
     }
 
     void OpenLock()
     {
-        theLock.SetActive(false);
         doorAnimator.SetBool("Open",true);
     }
 

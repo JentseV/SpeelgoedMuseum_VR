@@ -37,9 +37,10 @@ public class GameLogic : MonoBehaviour
         }
 
         if(keyScript.keyPickedUp){
+            entrance.GetComponentInChildren<PaintingScript>().enabled= false;
             entrance.SetActive(true);
             entrance.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-            entrance.transform.position = new Vector3(0.25999999f,-3.11999989f,42.8800011f);
+            entrance.transform.position = new Vector3(0.25999999f,-3.69f,42.8800011f);
         }
         
     }

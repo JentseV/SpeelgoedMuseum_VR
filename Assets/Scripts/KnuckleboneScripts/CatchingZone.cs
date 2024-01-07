@@ -10,6 +10,7 @@ public class CatchingZone : MonoBehaviour
     [SerializeField]
     private Transform hook;
     
+    public CoinChest coinChest;
     public float raycastDistance = 10f;
 
 
@@ -50,6 +51,7 @@ public class CatchingZone : MonoBehaviour
         {
             caughtObject = other.gameObject;
             caughtObject.transform.parent = transform;
+            coinChest.PlayerScored();
             Debug.Log("caught object");
         }
     }
