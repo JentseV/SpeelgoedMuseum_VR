@@ -13,7 +13,7 @@ public class EnableZones : MonoBehaviour
 
     void Update()
     {
-        if(Vector3.Distance(this.transform.position, player.position) < 15)
+        if(Vector3.Distance(this.transform.position, player.position) < 5)
         {
             handL.SetActive(true);
             handR.SetActive(true);

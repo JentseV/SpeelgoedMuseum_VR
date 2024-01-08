@@ -12,7 +12,7 @@ public class CatchingZone : MonoBehaviour
     
     public CoinChest coinChest;
     public float raycastDistance = 10f;
-
+    public Vector3 lossy;
 
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class CatchingZone : MonoBehaviour
                 Rigidbody rb = caughtObject.GetComponent<Rigidbody>();
                 rb.velocity = Vector3.zero;
                 caughtObject = null;
+                lossy = caughtObject.transform.lossyScale;
             }
         }
 
@@ -43,6 +44,7 @@ public class CatchingZone : MonoBehaviour
         caughtObject.transform.position = hook.position;
         Rigidbody rb = caughtObject.GetComponent<Rigidbody>();
         rb.velocity = Vector3.zero;
+        lossy = caughtObject.transform.lossyScale;
     }
 
     private void OnTriggerEnter(Collider other)
