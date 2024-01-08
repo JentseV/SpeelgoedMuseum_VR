@@ -21,6 +21,7 @@ TagManager:
   - PlayerHand
   - WoodFloor
   - Terrain
+  - HobbyHorse
   layers:
   - Default
   - TransparentFX
